@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Specification</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Connect</a></li>
+            </ul>
+        </div>
+
+        <div class="contain">
+            <div class="left-col">
+                <h1>The<br>Real<br>Sound</h1>
+            </div>
+          
+                <div class="right-col">
+                    <p>HUSNN HAI SUHAANA</p>
+                    <img src="2.jpg" class="pause" id="icon" onclick="song()">
+                </div>
+                <div class="right-col">
+                    <p>Bewafa</p>
+                    <img src="2.jpg" class="pause" id="icon" onclick="so()">
+                </div>
+                <div class="right-col">
+                    <p>Mummy Kasam</p>
+                    <img src="2.jpg" class="pause" id="icon" onclick="son()">
+                </div>
+                <div class="right-col">
+                    <p>Shona Shona</p>
+                    <img src="2.jpg" class="pause" id="icon" onclick="s1()">
+                </div>
+            
+          
+        </div>
+    </div>    
+    <audio src="song.mp3" id="mySong" type="audio/mp3"></audio>
+    <audio src="1.mp3" id="so" type="audio/mp3"></audio>
+    <audio src="2.mp3" id="son" type="audio/mp3"></audio>
+    <audio src="3.mp3" id="s1" type="audio/mp3"></audio>
+    <script>
+        function song(){
+            var mySong=document.getElementById("mySong");
+            mySong.play();
+        }
+        function so(){
+            var so=document.getElementById("so");
+            so.play();
+            if(so == play()){
+                so=pause();
+            }
+        }
+        function son(){
+            var son=document.getElementById("son");
+            son.play();
+        }function s1(){
+            var s1=document.getElementById("s1");
+            s1.play();
+        }
+    </script>
+</body>
+</html>
